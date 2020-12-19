@@ -1,0 +1,27 @@
+<html>
+<head>
+<title class="geek">properties of node object</title>
+</head>
+<body bgcolor="#678976">
+    <h1 id="mine" align="center">DOCUMENT FRAGMENT APPEND EXISTING NODE</h1>
+    <p class="myclass" id="no" align="center" title="para">PASSED INTERMEDIATE FROM B.N PUBLIC SCHOOL</p>
+    <section id="mysec">
+        <li>adi</li>
+        <li>sarika</li>
+        <li>aspra</li>
+        <li>vatsalya</li>
+    </section>
+    <div id="sarika">
+
+    </div>
+    <script>
+        var adi =document.getElementById("mine");
+        var sar=document.getElementById("sarika");
+        sar.appendChild(adi);
+        console.log("sarika");
+        // here we transfer the h1 of id "mine" to the div id "sarika";
+        // we can append exixting node like this
+        // parentNode.appendChild("childNode");
+        </script>
+        </body>
+        </html>
