@@ -1,0 +1,24 @@
+<html>
+<head><title>constructor in js</title></head>
+<body bgcolor="coral">
+<script>
+    var Mobile= function  (model){
+        this.model=model;
+        this.colour='white';    //instance member
+        this.battery= 4000;
+        this.show=function(){
+            return(this.colour);
+        };
+    };
+    var s=prompt("enter the model");
+    var samsung=new Mobile(s);
+    var nokia=new Mobile('3310');                  //suppose we want to add a new property weight to all objects
+    document.write(samsung.colour+"<br>"+nokia.model+"<br>");
+    Mobile.prototype.weight='3og'  ;
+                                            //prototype member not shown in console log
+    document.write(samsung.weight+"<br>"+samsung.model+"<br>");
+    document.write(nokia.show()); //accessing the public function from inside a fuction
+   
+</script>
+</body>
+</html>
